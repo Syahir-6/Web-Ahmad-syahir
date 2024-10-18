@@ -1,0 +1,139 @@
+/* Layout */
+/* Mengatur desain header */
+header {
+    background: #BCA994;
+    color: #fff;
+    padding: 15px 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* Layout untuk container */
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+/* Mengatur sidebar */
+aside {
+    flex: 20%;
+    background: #923E36;
+    padding: 20px;
+}
+
+/* Menu sidebar */
+.menu {
+    padding: 0;
+    list-style: none; /* Tambahkan ini untuk menghilangkan titik */
+}
+
+
+.menu li {
+    border-bottom: 1px dotted #444;
+}
+
+.menu a {
+    display: block;
+    padding: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    background: #000;
+}
+
+/* Konten utama */
+section.main {
+    flex: 80%;
+    background: #fff;
+    min-height: 530px;
+    padding: 20px;
+}
+
+/* Gaya form */
+.form-group {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    clear: both;
+}
+
+.form-group label {
+    width: 30%;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.form-group .input {
+    width: 50%;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="file"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Mengatur radio button */
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+.form-group.radio-group {
+    display: flex;
+    align-items: center;
+}
+
+.form-group.radio-group label {
+    width: auto;
+    margin-right: 20px;
+}
+
+/* Tombol */
+.tombol.simpan {
+    background: #038ade;
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.tombol.reset {
+    background: #fb8307;
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+	margin-left:10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Responsive form */
+@media (max-width: 700px) {
+    .form-group label,
+    .form-group .input {
+        width: 100%;
+    }
+
+    .form-group {
+        display: block;
+    }
+}
+
+/* Mengatur footer */
+footer {
+    background: #ccc;
+    color: #555;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}

@@ -1,0 +1,111 @@
+/* Layout */
+/* Mengatur desain header */
+header {
+    background: #BCA994;
+    color: #fff;
+    padding: 15px 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* Container layout */
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+/* Sidebar */
+aside {
+    flex: 20%;
+    background: #923E36;
+    padding: 20px;
+}
+
+/* Menu sidebar */
+.menu {
+    padding: 0;
+    list-style: none; /* Tambahkan ini untuk menghilangkan titik */
+}
+
+
+.menu li {
+    border-bottom: 1px dotted #444;
+}
+
+.menu a {
+    display: block;
+    padding: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    background: #000;
+}
+
+/* Main content */
+section.main {
+    flex: 80%;
+    background: #fff;
+    padding: 20px;
+    min-height: 530px;
+}
+
+/* Tabel */
+.judul {
+    color: #555;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
+}
+
+.table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+.table th {
+    background: #eee;
+}
+
+/* Tombol */
+.tombol {
+    display: inline-block;
+    padding: 15px 30px;
+    color: #fff;
+    text-decoration: none;
+    background: #038ade;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.tombol.edit, .tombol.hapus {
+    padding: 10px 15px;
+    font-size: 12px;
+}
+
+.tombol.hapus {
+    background: #fc4c4c;
+}
+
+/* Footer */
+footer {
+    background: #ccc;
+    color: #555;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Responsiveness */
+@media (max-width: 700px) {
+    .container {
+        flex-direction: column;
+    }
+}
